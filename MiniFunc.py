@@ -141,36 +141,19 @@ def clearQueue():
 ##############################################################################
 
 if '__main__' == __name__:
-	#iStr = 'weixin://wxpay/bizpayurl?pr=c0LMOdd'
-	#img = make_QR(iStr)
-	#img.show()
-	#112.74.171.209 "POST /FASTCODE?ID=6225504767&USERNAME=fanxiang&VMC=10571&PTYPE=FASTCODE&PID=810&FASTCODE=303&MAC=4ff162a9c27f18789204b2141a08c0b8
-	#ss = 'ID=6225504767&USERNAME=fanxiang&PASSWORD=fanxiang8817&VMC=10571&PTYPE=FASTCODE&PID=810&FASTCODE=303'
-	#print ss
-	ss = 'QID=000005&USERNAME=ubox&PASSWORD=ubox123&QLEVEL=WARNING'
-	#6372e9060cd23d1be2c04e2de3766439
-	print md5(ss)
-	#http://103.231.67.143:8079/QUERY?QID=001234&QLEVEL=SPECIFY&STARTTIME=20170329000000&ENDTIME=20170329235959&USERNAME=ubox&MAC=6372e9060cd23d1be2c04e2de3766439
-	
-	#setLogConfig()
-	#count = 10
-	#while(count):
-	#	Log('warning','message 1')
-	#	count -= 1
-	
-	#while(True):
-	#	cType = raw_input("Input:")
-	#	if cType == 'a':
-	#		addItem("A")
-	#	elif cType == 'g':
-	#		print getItem()
-	#	elif cType == 's':
-	#		print getQSize()
-	#	elif cType == 'c':
-	#		clearQueue()
-	#	else:
-	#		break;
-	#	pass
+	while(True):
+		cType = raw_input("Input:")
+		if cType == 'a':
+			addItem("A")
+		elif cType == 'g':
+			print getItem()
+		elif cType == 's':
+			print getQSize()
+		elif cType == 'c':
+			clearQueue()
+		else:
+			break;
+		pass
 
 
 
